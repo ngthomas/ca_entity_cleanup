@@ -1,2 +1,2 @@
-# ca_entity_cleanup
+# collective Access
 Assess entity typos and redundancy on collectiveAccess
