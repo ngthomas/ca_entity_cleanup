@@ -34,7 +34,7 @@ Given the large number of entities in CA along with a wide possible range of err
 | Categories     | #    | Subcategories  | #    | Subategories | #    |
 |----------------|------|-------------|------|------------|------|
 | No extra word  | 1522 | Duplicate   |  414 | exact      | 250  |
-|                |      |             |      | special    | 164  |
+|                |      |             |      | inexact    | 164  |
 |                |      | 1 char typo | 1098 | ins/del    | 552  |
 |                |      |             |      | sub        | 546  |
 | 1 extra word   | 800  | no typo     |  495 |            |      |
@@ -42,11 +42,11 @@ Given the large number of entities in CA along with a wide possible range of err
 | 2+ extra words |  295 | no typo     |  213 |            |      |
 |                |      | 1 char typo |   82 |            |      |
 
-Two subcategories can be found under the `duplicate` category. The `special duplicate` case refers to perfect matches of all alpha-numeric characters but not for non-alphanumeric characters for each word between entities. 
+Two subcategories can be found under the `duplicate` category. The `inexact duplicate` case refers to perfect matches of all alpha-numeric characters but not for non-alphanumeric characters for each word between entities. 
 
 The list of entity pairs for each purported erronenous categories is a tab-separated txt file. Here are some patterns / examples found in each output files.
 * exact_dup.txt
-* special_dup.txt
+* inexact_dup.txt
     * extra quotes or characters
     ```
     Leslie "Bubba" Gaines   Leslie Bubba Gaines
